@@ -1,0 +1,74 @@
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+body {margin:0;font-family:Arial}
+.wrapper{background-image: url("../img/background-image.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; height: 95vh; }
+/*------------ Header Part -----------*/
+.header{width: 100%; background: red; height: auto; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+.container{width: 90%; margin: 0px auto;}
+.topnav {overflow: hidden; background-color: #fff; height: auto;}
+.topnav img{float: left; margin: 13px 0px;}
+.topnav a {float: left; display: block; height: 50px; color: #333; text-align: center; text-decoration: none; font-size: 16px; line-height: 50px; padding: 0px 10px;}
+.topnav .logo-name{color: red; font-size: 18px; font-weight: bold; color: #009dcb; padding-left: 5%;}
+.topnav .icon {display: none;}
+.dropdown {float: left; overflow: hidden;}
+#btn{float: right; padding-right: 5%;}
+.dropdown{float: right;}
+.dropdown .dropbtn {font-size: 17px; border: none; outline: none; color: #333; height: 50px; line-height: 50px; background-color: inherit; font-family: inherit; margin: 0;}
+.dropdown-content {display: none; position: absolute; background-color: #f9f9f9; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
+.dropdown-content a { float: none; color: black; height: 40px; line-height: 40px; text-decoration: none; display: block; text-align: left; font-size: 14px;}
+.dropdown-content a:hover {background-color: #ddd; color: black;}
+.dropdown:hover .dropdown-content {display: block;}
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {display: none;}
+  .topnav a.icon {float: right; display: block; padding-right: 5%; color: #333;}
+}
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a{padding-left: 5%;}
+  .topnav.responsive .icon {position: absolute; right: 0; top: 0;}
+  .topnav.responsive a {float: none; display: block; text-align: left;}
+  .topnav.responsive .dropdown {float: none; width: 100%;}
+  .topnav.responsive .dropdown-content {position: relative; width: 100%; margin-bottom: 20px;}
+  .topnav.responsive .dropdown .dropbtn {display: block; width: 100%; text-align: left;}
+  #btn{float: left; padding-left: 5%;}
+}
+/*------------ Content Part -----------*/
+.content{width: 100%;}
+.content h2{text-align: center; margin-top: 100px; color: #fff; font-size: 36px;}
+.content form{ width: 600px; height: 280px; background-color: #fff; margin: 0 auto; border-radius: 4px; margin-top: 20px;}
+.content form label, .content form select, .content form input:not([type=submit]), .content form textarea{width: 560px; margin: 0px 20px; height: 36px; line-height: 36px; box-sizing: border-box;}
+.content form select, .content form input:not([type=submit]){padding: 8px;}
+.content form input[type=submit], .contact-form input[type=submit]{padding: 10px 20px; margin: 15px 20px; float: right; background-color: #009dcb; color: #fff; border-radius: 3px; outline: none; border: none; cursor: pointer;}
+@media screen and (max-width: 768px) {
+  .content h2{font-size: 24px; margin-top: 30px;}
+  .content form{width: 90%; margin-top: 20px;}
+  .content form select, .content form  label, .content form input:not([type=submit]){width: 90%; margin-left: 5%; margin-right: 5%;}
+}
+/*------------ Footer Part -----------*/
+.footer{width: 100%; height: 5vh; background-color: #009dcb; line-height: 5vh; text-align: center; color: #fff;}
+@media screen and (max-width: 768px) {
+  .footer{height: auto; line-height: auto;}
+}
+/*------------ Login Sign Up and Contact Part -----------*/
+.content .login-form{height: 255px; margin-top: 100px;}
+.content .signup-form{height: 325px; margin-top: 100px;}
+.content .contact-form{height: 450px; margin-top: 50px;}
+.content .col{width: 200px; float: left;}
+.content .signup-form .row{width: 600px;}
+.content .signup-form .row .col{width: 290px; float: left;}
+.content .signup-form .row .col label,  .content .signup-form .row .col input:not([type=submit]){width: 270px;}
+.content .login-form h4, .content .signup-form h4, .contact-form h4, .about h4{font-size: 24px; text-align: center; padding: 10px;}
+.content .login-form p, .content .signup-form p{float: left; padding-left: 20px; margin-top: 20px;}
+.content .login-form p a, .content .signup-form p a{color: #009dcb;}
+@media screen and (max-width: 768px) {
+  .content .login-form, .content .signup-form{margin-top: 30px;}
+  .content .contact-form{margin-top: 20px;}
+  .content .signup-form .row{width: 100%;}
+  .content .signup-form .row .col{width: 50%; margin: 0 auto;}
+  .content .signup-form .row .col label,  .content .signup-form .row .col input:not([type=submit]), .content .contact-form textarea{width: 90%;}
+}
+/*---------- About Part -----------*/
+.about{width: 600px; border-radius: 3px; background: #fff; margin: 0px auto; margin-top: 100px; margin-bottom: 20px;}
+.about p{text-align: justify; padding: 0px 20px 20px 20px; line-height: 24px;}
+@media screen and (max-width: 768px) {
+  .about{width: 90%; margin-top: 20px;}
+}
